@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto SCS</title>
+</head>
+
+<body>
+
+    <div class="indice">
+        <h1>SCS</h1>
+        <h3>Projeto: Cadastro de Produtos</h3>
+    </div>
+
+    <div class="campoBusca">
+        <input type="text" placeholder="Buscar Produto">
+        <button class="btnLimpar">Limpar</button>
+        <button class="btnAdicionar">Adicionar</button>
+    </div>
+
+    <section id="grupos">
+        <h4 id="vazio">Nenhum item adicionado</h4>
+    </section>
+
+    <!-- campo de excluir -->
+    <form class="divExcluir">
+        <div class="campoExcluir">
+            <div class="infoAlerta">
+                <i class="fi fi-bs-cross-circle excluirForm"></i>
+                <h3>Deseja Excluir esse produto?</h3>
+            </div>
+            <div class="divBtnsExcluir">
+                <button class="btnSim" onclick="deletarItem()">Sim</button>
+                <button class="btnNao">Não</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- campo de editar -->
+    <div class="divEditar">
+        <div class="campoEditar">
+            <div class="introdiv">
+                <i class="fi fi-tr-pen-square"></i>
+                <h3>Adicionar/Modificar Produto</h3>
+            </div>
+            <div class="divsInfo">
+                <div class="divInfo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="divInfoGrupo">
+                    <div class="divInfo">
+                        <label for="quant">Quantidade em Estoque:</label>
+                        <input type="number" min="1" name="quant" id="estoque">
+                    </div>
+
+                    <div class="divInfo">
+                        <label for="preco">Preço:</label>
+                        <input type="number" name="preco" id="preco" min="1">
+                    </div>
+                </div>
+
+                <div class="divInfo">
+                    <label for="areaTexto">Descrição:</label>
+                    <textarea name="areaTexto" cols="40" rows="8" id="textArea"></textarea>
+                </div>
+
+            </div>
+            <div class="divBtn">
+                <button id="btnCancelar">Cancelar</button>
+                <button id="btnSalvar" onclick="adicionarItem()">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
+</html>

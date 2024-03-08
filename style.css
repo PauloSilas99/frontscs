@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body{
+    background: rgb(235, 235, 235);
+} */
+
+.indice{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.campoBusca{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap:4px;
+}
+
+.campoBusca input{
+    width: 320px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 1px 2px;
+}
+
+.campoBusca button{
+    height:30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnLimpar{
+    background: rgb(73, 73, 73);
+    padding: 2px 4px;
+    color: white;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+.btnAdicionar{
+    background: rgb(34, 72, 199);
+    padding: 2px 4px;
+    color: white;
+    border: 1px solid rgb(34, 72, 199);
+}
+
+
+section{
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.grupoDados{
+    border: 1px solid;
+    box-shadow: 5px 5px 10px;
+    padding: 0px 18px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+.conteudo{
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+.conteudoDescricao{
+    padding: 10px 0px;
+}
+
+.iconesOpcoes{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.formato{
+    background: red;
+    color: white;
+    border-radius: 6px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.formato2{
+    background: rgb(34, 72, 199);
+    color: white;
+    border-radius: 6px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* are destinada para o formulario de exclusão */
+
+.divExcluir{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.excluirForm{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+.campoExcluir{
+    border-radius: 6px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.divBtnsExcluir{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.infoAlerta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnSim{
+    background:rgb(34, 72, 199);
+    color: white;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnNao{
+    background:red;
+    color: white;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* area para formulario de edição */
+.divEditar{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    background: rgba(235, 235, 235, 0.671);
+}
+.campoEditar{
+    background: white;
+    margin: 150px 400px;
+    border: 1px solid white;
+    padding: 10px 16px;
+    border-radius:8px;
+    box-shadow:5px 5px 10px;
+}
+.campoEditar h3{
+    margin: 10px 0px;
+}
+
+.divExcluir{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    background: rgba(235, 235, 235, 0.671);
+}
+
+.campoExcluir{
+    background: white;
+    margin: 250px 500px;
+    border: 1px solid white;
+    padding: 10px 16px;
+    border-radius:8px;
+    box-shadow:5px 5px 10px;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.divsInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divBtn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+textarea{
+    padding:10px;
+    border: 1px solid;
+}
+
+.introdiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.divInfoGrupo{
+    display: flex;
+    gap: 5px;
+}
+
+.divInfoGrupo input{
+    width: 236px;
+}
+
+.none{
+    display: none;
+}
